@@ -3,16 +3,17 @@
 using namespace std;
 
 int main(){
-    int guess = 0;
+    int guess = 1;
     int limit = 3;
     int secnum = 23;
     int sceltanum;
     bool out = false;
     while(secnum != sceltanum and !out){
-        if(guess < limit){
+        if(guess <= limit){
 
              cout <<"Giocatore perfavore inserisci il numero giusto: ";
             cin >> sceltanum;
+            cout <<"Scelte date: " << guess << endl;
             guess++;
             cout << "Numero scelto: "<< sceltanum << endl;
             if(sceltanum == secnum){
